@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top,#dacb87db, rgb(255, 255, 255));
+        background-attachment: fixed;
+      }
+
+.center-image {
+    text-align: center; /* Centrerer indholdet (billedet) vandret */
+}
+.top-left-image {
+    position: absolute;  /* Placerer billedet i forhold til den nærmeste positionerede forælder */
+    top: 0;              /* Sætter billedet i toppen */
+    left: 0;             /* Sætter billedet til venstre */
+    width: 40px;        /* Justerer bredden på billedet */
+    height: auto;        /* Bevarer billedets proportioner */
+}
+
+.center-image img {
+    display: inline-block; /* Sikrer, at billedet respekterer text-align */
+    max-width: 100%; /* Tilpas billedet, så det ikke går uden for skærmen */
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+/* Styling af navigation bar */
+.navbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+/* Styling af ul og li */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Styling af links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000; /* Tekstfarven */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Glidende farveændring ved hover */
+}
+
+/* Hover effekt */
+.navbar ul li a:hover {
+    color: #20672b; /* Farveændring ved hover */
+}
+
+/* Styling af indhold */
+.content {
+    padding: 10%; /* For at sikre, at indholdet ikke skjules af navbaren */
+    color: rgb(0, 0, 0);
+    margin: 130px;
+    align-items: center;
+}
+
+.indhold {
+width: 900px;
+}
+
+
+@charset "utf-8"; /*Sikre du kan skrive æ ø og å*/
+#navMenu {
+margin:0;
+padding:0;
+}
+#navMenu ul {
+margin:0;
+padding:0;
+line-height:30px;
+}
+#navMenu li {
+margin:0;
+padding:0;
+list-style:none;
+float:left;
+position:relative;
+background:#999; /*Baggrundsfarven for links*/
+}
+#navMenu ul li a {
+text-align:center;
+font-family:"Comic Sans MS", cursive; /*Links skrifttype*/
+text-decoration:none; /*Fjerner links understregning*/
+height:30px; /*Højden på link-bokse*/
+width:150px; /*Breden på link-bokse*/
+display:block; /*Link i blok*/
+color:#FFF; /*Links tekstfarve*/
+border:1px solid #FFF;
+text-shadow:1px 1px 1px #000; /*Links kant størrelser og farve*/
+}
+#navMenu ul ul {
+position:absolute;
+visibility:hidden;
+top:32px;
+}
+#navMenu ul li:hover ul {
+visibility:visible;
+}
+/*****************************************************/
+#navMenu li:hover {
+background:#09F; /*Overordnet links "mus over" farve*/
+}
+#navMenu ul li:hover ul li a:hover {
+background:#CCC; /*Underlinks "mus over" farve*/
+color:#000; /*Underlinks "mus over" tekstfarve*/
+}
+#navMenu a:hover {
+color:#000; /*Links "mus over" tekstfarve mens musen er på linket*/
+}
+.clearFloat {
+clear:both;
+margin:0;
+padding:0;
+}
+
+
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d6b671;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-link:hover {
+    background-color: #d6b671b7;
+}
+
+
+.accordion {
+    background-color: #dacb873c;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  
+  .active, .accordion:hover {
+    background-color: #dacb8775; 
+  }
+  
+  .panel {
+    text-align: left;
+    padding: 20%;
+    display: none;
+    background-color: #dacb8723;
+    overflow: hidden;
+  }
+
+  footer {
+    background-color:#dacb8775;
+    display: flex;
+    justify-content: left;
+}
+
+#kontaktos { 
+    margin:100px 200px; 
+}
+
+#qa {  
+    margin:100px 200px;  
+}
+
+#aarhuskomm {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 80px;
+    width: 120px;
+    position: relative;
+    opacity: 1;
+  }

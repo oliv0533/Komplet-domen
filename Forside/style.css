@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top,#dacb87db, rgb(255, 255, 255));
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    display: inline;
+  }
+
+  /* Styling af navigation bar */
+  ul {
+      position: sticky;
+      width: 100%;
+      top: 0;
+      left: auto;
+      background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+      padding: 15px 0;
+      z-index: 1000;
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  #aarhuskomm {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 80px;
+    width: 120px;
+    position: relative;
+    opacity: 1;
+  } 
+
+  #Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    height: 200px;
+    width: 150px;
+} 
+
+
+.left {
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    margin: 5px 0;
+}
+
+.textbox {
+    width: 500px;
+    
+}
+
+.sidebilleder {
+    height: 400px;
+    width: 300px;
+    margin: 20px 40px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color:#dacb87db;
+    display: flex;
+    justify-content: left;
+}
+
+#kontaktos { 
+    margin:100px 200px; 
+}
+
+#qa {  
+    margin:100px 200px;  
+}
+
+ /* Slideshow-relevant for manuelt*/
+ .container {
+    padding: 2rem;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+    
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    height: 55%;
+  }
+  
+  
+    .slider-nav a {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.75; 
+      transition: opacity ease 250ms;
+    }
+  
+    .slider-nav a:hover {
+      opacity: 1;
+    }
+  

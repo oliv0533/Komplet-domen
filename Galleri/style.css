@@ -1,0 +1,346 @@
+* { box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+}
+
+header.topbar {
+    background-color:#dacb8775;
+    color: #fafafa;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topbar a {
+    color: #070000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.topbar-image {
+    width: 80px;
+    height: auto;
+}
+
+.topbar-commune-image {
+    width: 100px;
+    height: auto;
+}
+
+#navbar {
+    position: sticky;
+    width: 100%;
+    top: 80px; /* Adjust this if needed to ensure it's below the topbar */
+    background-color: #0500004d; /* Transparent background */
+    padding: 15px 0;
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color:#dacb8775;
+    margin-top: 160px;
+    padding: 0;
+    position: relative;
+}
+
+.text-box-1, .text-box-2 {
+    background-color: #fff; /* Baggrundsfarve for tekstboksene */
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box-1 {
+    position: absolute;
+    bottom: 10px; /* Juster dette for at placere den ønskede afstand fra bunden */
+    left: 0;
+    right: 0;
+    max-width: 1200px; /* Juster størrelsen som ønskes */
+    margin: 0 auto;
+    color: #000;
+}
+
+.text-box-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 1200px; /* Juster størrelsen som ønskes */
+    margin: 0 auto;
+    color: #000;
+}
+
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 1rem calc((100vw - 1300px) / 2);
+    align-items: start;
+}
+
+.colum-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+    padding: 0 2rem;
+}
+
+.colum-left h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.colum-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #000000c7;
+    background-color: rgba(247, 239, 239, 0.581);
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #12f025;
+}
+
+.colum-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Adjust to a suitable size */
+    max-width: 1200px; /* Set a maximum width for the carousel */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+.carousel-slides {
+    display: flex;
+    width: 1800%; /* 100% × 18 images */
+    height: 100%;
+    animation: slide 90s infinite; /* Total duration is 90 seconds */
+}
+
+.slide {
+    min-width: 5.555%; /* 100% / 18 images */
+    height: 100%;
+    display: flex; /* Added flexbox to center images */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+.slide img {
+    max-width: 100%; /* Image fits the container's width */
+    max-height: 100%; /* Image fits the container's height */
+    object-fit: contain; /* Ensures the entire image is visible without cropping */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    5.555% { transform: translateX(-5.555%); }
+    11.111% { transform: translateX(-11.111%); }
+    16.666% { transform: translateX(-16.666%); }
+    22.222% { transform: translateX(-22.222%); }
+    27.777% { transform: translateX(-27.777%); }
+    33.333% { transform: translateX(-33.333%); }
+    38.888% { transform: translateX(-38.888%); }
+    44.444% { transform: translateX(-44.444%); }
+    50% { transform: translateX(-50%); }
+    55.555% { transform: translateX(-55.555%); }
+    61.111% { transform: translateX(-61.111%); }
+    66.666% { transform: translateX(-66.666%); }
+    72.222% { transform: translateX(-72.222%); }
+    77.777% { transform: translateX(-77.777%); }
+    83.333% { transform: translateX(-83.333%); }
+    88.888% { transform: translateX(-88.888%); }
+    94.444% { transform: translateX(-94.444%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact-container p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #0000001a;
+    color: #110101;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #12f025;
+}
+
+.footer {
+    background-color: #333;
+    color: #030000;
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+}
+
+.social-media a:hover img {
+    opacity: 0.8;
+}
+footer {
+    background-color:rgb(215, 198, 178);
+    display: flex;
+    justify-content: left;
+}
+
+#kontaktos { 
+    margin:100px 200px; 
+}
+
+#qa {  
+    margin:100px 200px;  
+}
+#aarhuskomm {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 80px;
+    width: 140px;
+    position: relative;
+    opacity: 1;
+  }
+  body{
+    background: linear-gradient(to right, blanchedalmond, white);
+    background-attachment: fixed;
+  }
+/* Generel tekstfarve for tekstbokse */
+.text-box-1 {
+    background-color:#dacb8775; /* Baggrundsfarve for tekstboksen */
+    color: #000; /* Sort tekstfarve */
+    padding: 1rem;
+    margin: 10rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+

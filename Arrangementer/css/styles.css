@@ -1,0 +1,260 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.center-image {
+    text-align: center; /* Centrerer indholdet (billedet) vandret */
+}
+
+/* Styling af navigation bar */
+.navbar {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent background */
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Styling af ul og li */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Styling af links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #000; /* Tekstfarven */
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s ease; /* Glidende farveændring ved hover */
+    font-size: 1.0rem;
+}
+
+
+/* Hover effekt */
+.navbar ul li a:hover {
+    color: green; /* Farveændring ved hover */
+}
+
+/* Styling af indhold */
+.content {
+    padding: 4px 20px; /* For at sikre, at indholdet ikke skjules af navbaren */
+    text-align: center;
+}
+
+
+.top-left-image {
+    position: absolute;  /* Placerer billedet i forhold til den nærmeste positionerede forælder */
+    top: 0;              /* Sætter billedet i toppen */
+    left: 0;             /* Sætter billedet til venstre */
+    width: 50px;        /* Justerer bredden på billedet */
+    height: auto;        /* Bevarer billedets proportioner */
+}
+
+.image-container {
+    display: flex;        /* Aktiverer flexbox */
+    justify-content: space-between;  /* Placerer billeder med jævn afstand */
+}
+
+.image-container img {
+    width: 33%;           /* Sørger for, at hvert billede er 30% af containerens bredde */
+    height: auto;         /* Bevarer billedets proportioner */
+}
+
+.text-overlay {
+    position: absolute;  /* Gør det muligt at placere teksten over billedet */
+    top: 65%;            /* Juster placeringen af teksten (midt på billedet) */
+    left: 50%;           /* Juster placeringen af teksten (midt på billedet) */
+    transform: translate(-50%, -50%);  /* Centrerer teksten */
+    color: white;        /* Tekstfarve (kan justeres) */
+    font-size: 40px;     /* Størrelse på teksten (kan justeres) */
+    font-weight: bold;   /* Gør teksten fed */
+    text-shadow: 2px 2px 5px black; /* Tilføjer en skygge til teksten for bedre læsbarhed */
+}
+
+.text-box {
+    display: inline-block;     /* Sikrer at containeren kun fylder tekstens bredde */
+    border: 2px solid black;   /* Tilføjer en sort kant */
+    padding: 10px;             /* Tilføjer lidt afstand inde i boksen */
+    margin: 20px;              /* Tilføjer ydre mellemrum omkring boksen */
+}
+
+
+
+
+/* Generel styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Arrangementer */
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start; /* Justerer indholdet til venstre */
+    
+}
+
+
+.event {
+    background-color: rgba(243, 239, 234, 0.594);
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px; /* Tilføjer et mellemrum på 20px mellem billedet og teksten */
+}
+
+.event h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.event p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.event strong {
+    color: #333;
+}
+
+
+.eventdato {
+    width: 150px;
+}
+
+.eventtekst {
+    width: 800px;
+}
+
+.small-image {
+    width: 150px; /* Gør billedet 300 pixels bredt */
+    height: auto; /* Bevarer billedets proportioner */
+    left: auto;
+}
+
+.image {
+    width: 100px;        /* Juster størrelsen på billedet som ønsket */
+    height: auto;        /* Bevarer proportionerne */
+    margin-right: 10px; /* Tilføjer lidt afstand mellem billedet og teksten */
+}
+
+.text {
+    margin: 0;           /* Fjern standard margin omkring teksten */
+}
+
+
+/* Styling for containeren */
+.box-container {
+    display: flex;
+    flex-direction: column; /* Ændrer til lodret retning */
+    align-items: flex-end; /* Justerer bokse til højre */
+    gap: 20px; /* Afstand mellem bokse */
+    float: right;
+    text-align: right;
+    justify-content: flex-end;
+    
+  }
+
+  
+  /* Gør bokse klikbare */
+  .clickable-box {
+    text-decoration: none; /* Fjern understregning fra links */
+  }
+  
+  /* Styling for bokse */
+  .box {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Sørger for, at boksen kun er så bred som indholdet */
+  }
+  
+  /* Hover-effekt */
+  .box:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
+
+
+
+footer {
+    background-color:#dacb8775
+    ;
+    display: flex;
+    justify-content: left;
+}
+
+#kontaktos { 
+    margin:100px 200px; 
+}
+
+#qa {  
+    margin:100px 200px;  
+}
+
+#aarhuskomm {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 80px;
+    width: 120px;
+    position: relative;
+    opacity: 1;
+  }
+
+
+  body{
+    background: linear-gradient(to top, #dacb8775, white);
+    background-attachment: fixed;
+  }
